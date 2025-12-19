@@ -1,90 +1,116 @@
-🏦 ATM Simulator (Java Console Application)
-📌 Overview
+🏧 ATM Management System (Console Based)
+📌 Project Overview
 
-This is a Java-based ATM Simulator Project.
-It simulates real-world ATM operations such as cash withdrawal, deposit, balance inquiry, and transaction history.
-The project demonstrates Object-Oriented Programming (OOP) concepts and user interaction with the console.
+This ATM Management System is a console-based application that simulates the basic functionalities of a real ATM.
+The project focuses on security 🔐, transaction handling 💰, and user-friendly experience.
 
-⚡ Features
+🚀 Features
+🔑 User Authentication
 
-🔑 PIN authentication for secure login
+Login using username and PIN
 
-💵 Cash Withdrawal with balance check
+✅ Correct PIN grants access
 
-💰 Cash Deposit updates balance
+❌ 3 wrong PIN attempts → account LOCKED 🔒
 
-📊 Balance Inquiry anytime
+Locked accounts cannot login until reset
 
-📝 Transaction History stored and displayed
+💵 ATM Operations
 
-🚪 Exit option to end session
+1️⃣ Cash Withdrawal
+2️⃣ Cash Deposit
+3️⃣ Balance Check
+4️⃣ Fund Transfer
+5️⃣ Transaction History
+6️⃣ Logout
 
-🛠️ Tech Used
+🧾 ATM Receipt Generation
 
-Language: Java
+After every successful transaction:
 
-Concepts:
+🏦 Bank Name
 
-Classes & Objects (OOP)
+📍 ATM Location
 
-Encapsulation (private balance, PIN)
+🕒 Date & Time
 
-Lists (for storing transaction history)
+👤 Account Holder Name
 
-Loops & Switch case (for transaction menu)
+💰 Transaction Type & Amount
 
-Scanner (for user input)
+🔢 Reference Number
 
-📂 Project Structure
-ATM-Simulator/
-│── Main.java   # source code
-│── README.md   # documentation
+🔐 Security Features
 
-🚀 How to Run
+🔒 Account Lock System
 
-Clone this repository
+After 3 consecutive wrong PIN attempts:
 
-git clone https://github.com/your-username/DSA-Projects.git
+Account is automatically locked
+
+User gets a warning message
+
+⚠️ PIN privacy reminder
+
+"Do not share your PIN with anyone."
+
+🧠 Logic Used
+
+Conditional statements (if-else)
+
+Loops for menu-driven program
+
+Variables for balance tracking
+
+Counter for wrong PIN attempts
+
+Date & Time handling for receipts
+
+📸 Sample Flow (Example)
+Enter username: Mohini
+Enter PIN: ****
+Access Granted ✅
+
+Cash Deposit → 200
+Deposit Successful 💰
+Current Balance: 10200
 
 
-Navigate to the folder
+❌ Wrong PIN (3 times):
 
-cd ATM-Simulator
+Invalid PIN ❌
+Account Locked 🔒
+Please contact bank.
 
+🛠️ Technologies Used
 
-Compile the program
+Programming Language: Python / Java / C (your choice)
 
-javac Main.java
+Platform: Console / Terminal
 
+IDE: VS Code / Any
 
-Run the program
+🎯 Learning Outcomes
 
-java Main
+Understand real-world ATM workflow
 
-🎯 Sample Output
-Username: Mohini
-Welcome to ATM. Enter your PIN:
-1234
-Access Granted! You are logged in.
+Implement security handling using logic
 
-Select your transaction:
-1 for Cash Withdrawal
-2 for Cash Deposit
-3 for Balance Check
-4 to Exit
+Design console-based applications
 
-Enter amount to withdraw: 2000
-Your current balance after withdrawal: 8000.0
+Manage transaction history and balances
 
-Transaction History:
-Withdraw: 2000
+🌟 Future Enhancements
 
-📖 Learning Outcome
+Admin panel 👨‍💼
 
-Practiced OOP in Java with encapsulation
+Database integration 🗄️
 
-Learned how to design a menu-driven console app
+Account unlock feature
 
-Understood real-world banking operations simulation
+GUI-based ATM interface 🖥️
 
-Gained experience in data persistence (transaction history in memory)
+❤️ Conclusion
+
+This project simulates a real-life banking system emphasizing security and transaction handling.
+The Account Lock feature 🔒 makes the system more realistic and professional.
